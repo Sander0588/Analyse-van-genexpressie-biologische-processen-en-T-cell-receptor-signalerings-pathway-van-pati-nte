@@ -52,6 +52,7 @@ Voor de pathway analyse werden eerst de genen van de go term GO:0045321 verkrege
 ## 📊 Resultaten
 
 - Differentiële genexpressie analyse 
+
 Uit de resultaten van de differentiële genexpressie analyse bleken 5119  genen differentieel tot expressie zijn gebracht. Hiervan waren er 2085 meer dan verdubbeld en 2487 meer dan gehalveerd in expressie. Om dit te visualiseren is er een volcano plot gemaakt waarin alle geteste genen staan met hun log2foldchange en hun gecorrigeerde p waarde 
 
 <p align="center">
@@ -59,6 +60,7 @@ Uit de resultaten van de differentiële genexpressie analyse bleken 5119  genen 
 </p>
 
 - GO analyse
+
 In Figuur 4 is een te zien waarin de meest statistisch significante  verrijkte GO-termen. In de diagram valt op dat elke verrijkte GO-term te maken heeft het immuunsysteem. Ook valt te zien dat de 2 meest statistisch significante verrijkte GO-termen allebei over het immuun respons gaan. 
 
 <p align="center">
@@ -66,6 +68,7 @@ In Figuur 4 is een te zien waarin de meest statistisch significante  verrijkte G
 </p>
 
 - Pathway analyse
+
 In figuur 5 is de pathway analyse van de T cell receptor signalerings patway te zien. Hierin valt op dat genen betrokken bij T cel activatie (CD28, ZAP70, ICOS en IFN-γ) sterk verhoogd tot expressie kwamen wat kan leiden tot het produceren van ontstekingsreacties. Ook lijkt de cel groei proliferatie verminderd te worden door omlaag gereguleerde bijbehorende genen (IL-2, AKT, ERK en CDK4)
 
 <p align="center">
@@ -73,5 +76,5 @@ In figuur 5 is de pathway analyse van de T cell receptor signalerings patway te 
 </p>
 
 ## Conclusie
-
-Spreuken met meer accuraatheid lijken minder krachtig te zijn. Een uitzondering op deze trend is de onvergeeflijke vloek *Avada Kedavra*, welke beter niet gebruikt kan worden. 
+In het onderzoek is gevonden dat er 5119  differentieel tot expressie zijn gekomen bij mensen met reumatoïde artritis ten opzichte van de controles. Hiervan waren er 2085 meer dan verdubbeld en 2487 meer dan gehalveerd in expressie. Uit de GO analyse viel te zien dat de differentieel tot expressie gebracht genen voornamelijk betrokken waren bij het immuunsysteem. Met de 2 meest verrijkte GO termen  betrokken bij de immuun response. 
+Vanuit de T cell receptor signalering pathway bekeken viel te zien dat de genen betrokken bij T cell activatie sterk verhoogd tot expressie kwamen wat zich aan 
