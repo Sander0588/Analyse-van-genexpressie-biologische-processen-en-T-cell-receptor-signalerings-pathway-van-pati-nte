@@ -84,15 +84,25 @@ Vanuit de T cell receptor signalering pathway bekeken viel te zien dat de genen 
 
 ## Bronnenlijst
 uo, Q., Wang, Y., Xu, D., Nossent, J., Pavlos, N. J., & Xu, J. (2018). Rheumatoid arthritis: Pathological mechanisms and modern pharmacologic therapies. Bone Research, 6(1), 15. https://doi.org/10.1038/s41413-018-0016-9 
+
 Rijksinstituut voor Volksgezondheid en Milieu. (z.d.). Reumatoïde artritis: Oorzaken en gevolgen. VZinfo. Geraadpleegd op 19 juni 2026, van https://www.vzinfo.nl/reumatoide-artritis/oorzaken-en-gevolgen 
+
 Lin, Y.-J., Anzaghe, M., & Schülke, S. (2020). Update on the pathomechanism, diagnosis, and treatment options for rheumatoid arthritis. Cells, 9(4), 880. https://doi.org/10.3390/cells9040880 
+
 National Center for Biotechnology Information. (z.d.). Homo sapiens (human), taxonomy ID 9606. National Library of Medicine. Geraadpleegd op 19 juni 2026, van https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606/ 
+
 Love, M. I., Huber, W., & Anders, S. (z.d.). DESeq2 vignette. Bioconductor. Geraadpleegd op 19 juni 2026, van https://www.bioconductor.org/packages//2.12/bioc/vignettes/DESeq2/inst/doc/DESeq2.pdf 
+
 Wickham, H., François, R., Henry, L., Müller, K., & Vaughan, D. (z.d.). dplyr: A grammar of data manipulation. https://dplyr.tidyverse.org/ 
+
 Young, M. D., Wakefield, M. J., Smyth, G. K., & Oshlack, A. (2010). Gene ontology analysis for RNA-seq: Accounting for selection bias. Genome Biology, 11(2), R14. https://doi.org/10.1186/gb-2010-11-2-r14 
+
 Wickham, H. (2016). ggplot2: Elegant graphics for data analysis (2e ed.). Springer. https://doi.org/10.1007/978-3-319-24277-4 
+
 Pagès, H., Carlson, M., Falcon, S., & Li, N. (z.d.). Introduction to Bioconductor annotation packages. Bioconductor. Geraadpleegd op 19 juni 2026, van https://bioconductor.posit.co/packages/release/bioc/vignettes/AnnotationDbi/inst/doc/IntroToAnnotationPackages.pdf 
+
 Bioconductor Project. (z.d.). OrganismDbi: Smooth interfacing of different database packages. Geraadpleegd op 19 juni 2026, van https://bioconductor.statistik.tu-dortmund.de/packages/3.6/bioc/html/OrganismDbi.html 
+
 Kanehisa Laboratories. (z.d.). KEGG pathway: T cell receptor signaling pathway (hsa04660). Kyoto Encyclopedia of Genes and Genomes. Geraadpleegd op 19 juni 2026, van https://www.genome.jp/dbget-bin/www_bget?pathway+hsa04660
 
 # AI gebruik
