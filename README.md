@@ -12,7 +12,7 @@
 - `Count matrix` – Bevat de gebruikte count matrix
 - `Referentie` - Bevat de referentie bestanden
 - `Resulaten` - Bevat de verkregen resultaten
-- `README.md` - het document om de tekst hier te genereren
+- `README.md` - Het document om de tekst hier te genereren
 - `assets` - overige documenten voor de opmaak van deze pagina
 - `data_stewardship` - Voor de competentie beheren 
 - `gitatributes` - Voor het doorsturen van grotere bestanden
@@ -56,7 +56,7 @@ Voor de pathway analyse werden eerst de genen van de go term GO:0045321 verkrege
 
 ### Groot verschil in genexpressie tussen patienten met reumatoïde artritis en gezonde controles 
 
-Uit de resultaten van de differentiële genexpressie analyse bleken 5119  genen differentieel tot expressie zijn gebracht. Hiervan waren er 2085 meer dan verdubbeld en 2487 meer dan gehalveerd in expressie. Om dit te visualiseren is er een volcano plot gemaakt waarin alle geteste genen staan met hun log2foldchange en hun gecorrigeerde p waarde 
+Uit de resultaten van de differentiële genexpressie analyse bleken 5119 genen differentieel tot expressie zijn gebracht. Hiervan waren er 2085 meer dan verdubbeld en 2487 meer dan gehalveerd in expressie. Om dit te visualiseren is er een volcano plot gemaakt waarin alle geteste genen staan met hun log2foldchange en hun gecorrigeerde p waarde 
 
 <p align="center">
   <img src="Resultaten/volcanobijschrift.png" alt="volcanobijschrift" width="600"/>
@@ -79,8 +79,10 @@ In figuur 5 is de pathway analyse van de T cell receptor signalerings patway te 
 </p>
 
 ## Conclusie
-In het onderzoek is gevonden dat er 5119  differentieel tot expressie zijn gekomen bij mensen met reumatoïde artritis ten opzichte van de controles. Hiervan waren er 2085 meer dan verdubbeld en 2487 meer dan gehalveerd in expressie. Uit de GO analyse viel te zien dat de differentieel tot expressie gebracht genen voornamelijk betrokken waren bij het immuunsysteem. Met de 2 meest verrijkte GO termen  betrokken bij de immuun response. 
-Vanuit de T cell receptor signalering pathway bekeken viel te zien dat de genen betrokken bij T cell activatie sterk verhoogd tot expressie kwamen wat zich aan bij de resultaten van de GO analyse. Uit alle resultaten valt te concluderen dat er een groot verschil is in expressie van genen tussen patiënten met reumatoïde artritis en gezonde mensen. 
+Het doel van dit onderzoek was om verschillen in genexpressie tussen patiënten met reumatoïde artritis en gezonde personen te identificeren en de betrokken biologische processen te onderzoeken en visualiseren. In dit onderzoek is gevonden dat er 5119 genen differentieel tot expressie kwamen. Hiervan hadden 2085 genen meer dan een verdubbeling in expressie en 2487 genen minder dan een halvering in expressie.
+De GO-analyse toonde aan dat de differentieel tot expressie gebrachte genen voornamelijk betrokken zijn bij processen van het immuunsysteem. Wat erop wijst dat veranderingen in immuunprocessen een belangrijke rol spelen bij reumatoïde artritis. 
+Daarnaast liet de analyse van de T-cell receptor signaleringsroute zien dat genen die betrokken zijn bij T-celactivatie verhoogd tot expressie kwamen. Deze resultaten ondersteunen de resultaten van de GO analyse en benadrukt de aanwezigheid van T-cellen bij reumatoïde artritis.
+Op basis van deze resultaten kan worden geconcludeerd dat er duidelijke verschil is tussen genexpressie van patiënten met reumatoïde artritis en gezonde personen. Ook laten de analyses zien dat deze verschillen voornamelijk met de biologische processen van het immuunsysteem te maken hebben. Hierdoor is het doel van het onderzoek behaald door het verschil in gen expressie te identificeren en het verschil van biologische processen te visualiseren.
 
 ## Bronnenlijst
 uo, Q., Wang, Y., Xu, D., Nossent, J., Pavlos, N. J., & Xu, J. (2018). Rheumatoid arthritis: Pathological mechanisms and modern pharmacologic therapies. Bone Research, 6(1), 15. https://doi.org/10.1038/s41413-018-0016-9 
