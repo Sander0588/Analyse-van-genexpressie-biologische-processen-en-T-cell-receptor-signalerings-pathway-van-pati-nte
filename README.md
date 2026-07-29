@@ -31,7 +31,7 @@ Voor dit onderzoek is gebruikgemaakt van data uit een eerder onderzoek van [(Pla
 ### Mappen en kwantificatie van de reads
 
 Alle analyses werden uitgevoerd in R (versie 4.5.3). Om de data te kunnen analyseren, werd eerst het [humane referentiegenoom](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606/) geïndexeerd met de package [Rsubread](https://pubmed.ncbi.nlm.nih.gov/30783653/) (versie 2.24.0). Vervolgens werden de reads van alle monsters (tabel 1) uitgelijnd tegen het referentiegenoom met behulp van dezelfde package. Na het uitlijnen werden de reads per gen geteld. Hierbij werd gebruikgemaakt van een [annotatiebestand](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606/), zodat de reads aan de juiste genen konden worden gekoppeld. De resulterende aantallen werden opgeslagen in een count matrix, die gebruikt kon worden voor de differentiële genexpressieanalyse. Deze stappen zijn uitgevoerd met het [script mappen en kwantificeren](script/script_mappen_en_kwantificeren.R).<p align="center">
-  <img src="Resultaten/stroomschema.png" alt="stroomschema" width="600"/>
+  <img src="Resultaten/tabelsamples.png" alt="tabelsamples" width="400"/>
 </p>
 ### Differentiële genexpressie analyse
 
@@ -41,8 +41,9 @@ Om verschillen in genexpressie tussen patiënten met reumatoïde artritis en gez
 Om inzicht te krijgen in de biologische processen die samenhangen met de gevonden differentieel tot expressie gebrachte genen, werd een Gene Ontology (GO)-analyse uitgevoerd. Hiervoor werden alleen genen geselecteerd met een log2 fold change groter dan 1. De dataset werd eerst bewerkt met de package [Dplyr](https://dplyr.tidyverse.org/ ) (versie 1.2.1). Vervolgens werd met de packages [goseq](https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets) (versie 1.62.0) en [genelendatabase]( https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets) (versie 1.46.0) een probability weighting function (PWF)-object aangemaakt op basis van het humane genoom hg19. Dit PWF-object corrigeert voor verschillen in genlengte, waardoor de verrijkingsanalyse betrouwbaarder wordt. Daarna werd de GO-analyse uitgevoerd met het [script Go analyse](script/script_Go_analyse.R). De resultaten werden gevisualiseerd in een staafdiagram met behulp van [ggplot2](https://link.springer.com/book/10.1007/978-3-319-24277-4) (versie 4.0.3) en het [script staafdiagram GO analyse](script/script_staadiagram_GO_analyse.R).### Pathway analyse
 ### Pathway analyse
 Om de resultaten van de GO-analyse verder biologisch te interpreteren, werd een pathwayanalyse uitgevoerd. Eerst werden de genen behorend bij de verrijkte GO-term GO:0045321 opgehaald met behulp van het [script welke genen bij GO term](script/script_welke_genen_bij_GO_term.R), de package [AnnotationDbi](https://bioconductor.posit.co/packages/release/bioc/vignettes/AnnotationDbi/inst/doc/IntroToAnnotationPackages.pdf) (versie 1.72.0) en de annotatiedatabase [org.Hs.eg.db](https://bioconductor.statistik.tu-dortmund.de/packages/3.6/bioc/html/OrganismDbi.html) (versie 3.22.0). Vervolgens werd vastgesteld dat een groot deel van deze genen betrokken is bij de T-cell receptor-signaleringsroute (KEGG-pathway [hsa04660]((https://www.genome.jp/dbget-bin/www_bget?pathway+hsa04660 )). Daarom werd deze pathway geselecteerd voor verdere analyse. Met het [script pathway analyse](script/script_pathway_analyse.R)werd onderzocht welke genen binnen deze signaalroute differentieel tot expressie kwamen. De opbouw van de volledige analysemethode is schematisch weergegeven in figuur 1.<p align="center">
-  <img src="Resultaten/tabelsamples.png" alt="tabelsamples" width="400"/>
+    <img src="Resultaten/stroomschema.png" alt="stroomschema" width="600"/>
 </p>
+
 
 ## 📊 Resultaten
 
