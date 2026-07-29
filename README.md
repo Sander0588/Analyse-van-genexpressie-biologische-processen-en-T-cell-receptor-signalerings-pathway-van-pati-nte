@@ -27,8 +27,7 @@ Het doel van deze studie is om verschillen in genexpressie tussen patiënten met
 
 ## Materiaal en methode
 
-De gebruikte data is afkomstig uit een eerder onderzoek [(Platzer et al., 2019)](https://pubmed.ncbi.nlm.nih.gov/31344123/). De samples van de data zijn verkregen via een synoviumbiopt en uit eindelijke gesequenced met illuminia sequencing. De personen met Reumatoïde artritis waren positief getest op ACPA, personen zonder negatief.  
-
+Voor dit onderzoek is gebruikgemaakt van een reads  van [(Platzer et al., 2019)](https://pubmed.ncbi.nlm.nih.gov/31344123/). De monsters waren afkomstig van synoviumbiopten van patienten met reumatoïde artritis en gezonde controles. De reads waren verkregen met Illumina sequencing. De patiënten met reumatoïde artritis waren positief getest op ACPA, terwijl de controlegroep ACPA negatief was.
 ### Mappen en kwantificatie van de reads
 
 De volledige analyse was gedaan in R (4.5.3) 
@@ -43,9 +42,9 @@ Van de differentiële genexpressie analyse resultaten werd een volcanoplot gemaa
 
 ### GO analyse
 
-Voor de go analyse werden alleen de genen gebruikt die differentieel tot expressie gebrachte werden met een hogere log2foldchange dan 1.  Deze data werd bewerkt door gebruik van [Dplyr](https://dplyr.tidyverse.org/ )(1.2.1). Uiteindelijk werd er een pwf object gemaakt met het genoom hg19 doormiddel van [goseq](https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets)(1.62.0) en [genelendatabase]( https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets)(1.46.0 ). Na het maken van het pwf object werd de go analyse uitgevoerd en opgeslagen doormiddel van [script Go analyse](script/script_Go_analyse.R). Om de go analyse te visualiseren is met behulp van [ggplot2](https://link.springer.com/book/10.1007/978-3-319-24277-4)(4.0.3) en [script staadiagram GO analyse](script/script_staadiagram_GO_analyse.R) een staafdiagram gemaakt. 
+Voor de go analyse werden alleen de genen gebruikt die differentieel tot expressie gebrachte werden met een hogere log2foldchange dan 1.  Deze data werd bewerkt door gebruik van [Dplyr](https://dplyr.tidyverse.org/ )(1.2.1). Uiteindelijk werd er een pwf object gemaakt met het genoom hg19 doormiddel van [goseq](https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets)(1.62.0) en [genelendatabase]( https://www.researchgate.net/publication/238769214_goseq_Gene_Ontology_testing_for_RNA-seq_datasets)(1.46.0 ). Na het maken van het pwf object werd de go analyse uitgevoerd en opgeslagen doormiddel van [script Go analyse](script/script_Go_analyse.R). Om de go analyse te visualiseren is met behulp van [ggplot2](https://link.springer.com/book/10.1007/978-3-319-24277-4)(4.0.3) en [script staafdiagram GO analyse](script/script_staadiagram_GO_analyse.R) een staafdiagram gemaakt. 
 
-Pathway analyse
+### Pathway analyse
 Voor de pathway analyse werden eerst de genen van de go term GO:0045321 verkregen door middel van [script welke genen bij GO term](script/script_welke_genen_bij_GO_term.R), [AnnotationDbi](https://bioconductor.posit.co/packages/release/bioc/vignettes/AnnotationDbi/inst/doc/IntroToAnnotationPackages.pdf)(1.72.0)  en [org.Hs.eg.db](https://bioconductor.statistik.tu-dortmund.de/packages/3.6/bioc/html/OrganismDbi.html)(3.22.0). Met deze genen werd met AI gevonden dat de veel van deze genen hoorden met de T cell receptor signalerings pathway (hsa04660). Vervolgens werd er een pathway analyse gedaan met de pathway [hsa04660]((https://www.genome.jp/dbget-bin/www_bget?pathway+hsa04660 ) met [script pathway analyse](script/script_pathway_analyse.R). Voor de materiaal en methode was figuur 1 gevolgd. 
 
 <p align="center">
@@ -80,8 +79,11 @@ In figuur 5 is de pathway analyse van de T cell receptor signalerings patway te 
 
 ## Conclusie
 Het doel van dit onderzoek was om verschillen in genexpressie tussen patiënten met reumatoïde artritis en gezonde personen te identificeren en de betrokken biologische processen te onderzoeken en visualiseren. In dit onderzoek is gevonden dat er 5119 genen differentieel tot expressie kwamen. Hiervan hadden 2085 genen meer dan een verdubbeling in expressie en 2487 genen minder dan een halvering in expressie.
+
 De GO-analyse toonde aan dat de differentieel tot expressie gebrachte genen voornamelijk betrokken zijn bij processen van het immuunsysteem. Wat erop wijst dat veranderingen in immuunprocessen een belangrijke rol spelen bij reumatoïde artritis. 
+
 Daarnaast liet de analyse van de T-cell receptor signaleringsroute zien dat genen die betrokken zijn bij T-celactivatie verhoogd tot expressie kwamen. Deze resultaten ondersteunen de resultaten van de GO analyse en benadrukt de aanwezigheid van T-cellen bij reumatoïde artritis.
+
 Op basis van deze resultaten kan worden geconcludeerd dat er duidelijke verschil is tussen genexpressie van patiënten met reumatoïde artritis en gezonde personen. Ook laten de analyses zien dat deze verschillen voornamelijk met de biologische processen van het immuunsysteem te maken hebben. Hierdoor is het doel van het onderzoek behaald door het verschil in gen expressie te identificeren en het verschil van biologische processen te visualiseren.
 
 ## Bronnenlijst
